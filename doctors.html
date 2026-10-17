@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Doctors | Shefa General Hospital</title>
+<meta name="description" content="Doctors">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="er" role="region" aria-label="Emergency">
+  <div class="wrap">
+    <span class="bn">জরুরি বিভাগ ২৪ ঘণ্টা খোলা — Emergency open 24/7</span>
+    <a href="tel:+8809610000999">Call 09610-000999</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="3" width="8" height="26" rx="2" fill="currentColor"/><rect x="3" y="12" width="26" height="8" rx="2" fill="currentColor"/></svg><span>Shefa General Hospital</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="doctors.html" aria-current="page">Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <button class="search-btn" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <div class="search-field" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search doctors, departments, services…" aria-label="Search the site" autocomplete="off">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="results" aria-live="polite"></ul>
+      <p class="hint">Popular: <button type="button">Cardiology</button><button type="button">ICU</button><button type="button">Vaccination</button><button type="button">X-ray</button></p>
+    </div>
+  </div>
+</header>
+<main>
+<div class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / Doctors</p>
+  <h1>Find a doctor</h1>
+  <p>Search by name or filter by department. Chamber times may change on public holidays.</p>
+</div></div>
+<section><div class="wrap">
+  <div class="filter">
+    <input id="doc-search" type="search" placeholder="Search by doctor name" aria-label="Search by doctor name">
+    <select id="doc-dept" aria-label="Department"><option value="all">All departments</option><option value="medicine">Medicine</option><option value="cardiology">Cardiology</option><option value="gynae">Gynae & Obstetrics</option><option value="paediatrics">Paediatrics</option><option value="orthopaedics">Orthopaedics</option><option value="diagnostics">Diagnostics</option></select>
+  </div>
+  <div class="doc-list"><article class="doc" id="rashida-haque" data-dept="medicine">
+  <div class="avatar">RH</div>
+  <div><h3>Dr. Rashida Haque</h3><p>Medicine · MBBS, FCPS (Medicine)</p><p class="when">Sat, Mon, Wed · 5–9 pm</p><a href="appointment.html?doctor=Dr.+Rashida+Haque">Book with this doctor</a></div>
+</article><article class="doc" id="mizanur-ahmed" data-dept="medicine">
+  <div class="avatar">MA</div>
+  <div><h3>Dr. Mizanur Ahmed</h3><p>Medicine · MBBS, MD (Endocrinology)</p><p class="when">Sun, Tue · 4–8 pm</p><a href="appointment.html?doctor=Dr.+Mizanur+Ahmed">Book with this doctor</a></div>
+</article><article class="doc" id="arif-kabir" data-dept="cardiology">
+  <div class="avatar">AK</div>
+  <div><h3>Dr. Arif Kabir</h3><p>Cardiology · MBBS, MD (Cardiology)</p><p class="when">Sat–Thu · 6–9 pm</p><a href="appointment.html?doctor=Dr.+Arif+Kabir">Book with this doctor</a></div>
+</article><article class="doc" id="shirin-farzana" data-dept="cardiology">
+  <div class="avatar">SF</div>
+  <div><h3>Dr. Shirin Farzana</h3><p>Cardiology · MBBS, FCPS (Medicine), Fellow (Cardiology)</p><p class="when">Sun, Wed · 10 am–1 pm</p><a href="appointment.html?doctor=Dr.+Shirin+Farzana">Book with this doctor</a></div>
+</article><article class="doc" id="nusrat-sultana" data-dept="gynae">
+  <div class="avatar">NS</div>
+  <div><h3>Dr. Nusrat Sultana</h3><p>Gynae & Obstetrics · MBBS, FCPS (Gynae & Obs)</p><p class="when">Sat–Thu · 10 am–1 pm</p><a href="appointment.html?doctor=Dr.+Nusrat+Sultana">Book with this doctor</a></div>
+</article><article class="doc" id="tanvir-mahmud" data-dept="paediatrics">
+  <div class="avatar">TM</div>
+  <div><h3>Dr. Tanvir Mahmud</h3><p>Paediatrics · MBBS, DCH, FCPS (Paed)</p><p class="when">Daily except Fri · 5–8 pm</p><a href="appointment.html?doctor=Dr.+Tanvir+Mahmud">Book with this doctor</a></div>
+</article><article class="doc" id="jahidul-islam" data-dept="orthopaedics">
+  <div class="avatar">JI</div>
+  <div><h3>Dr. Jahidul Islam</h3><p>Orthopaedics · MBBS, MS (Orthopaedics)</p><p class="when">Mon, Thu · 6–9 pm</p><a href="appointment.html?doctor=Dr.+Jahidul+Islam">Book with this doctor</a></div>
+</article><article class="doc" id="laila-nasrin" data-dept="diagnostics">
+  <div class="avatar">LN</div>
+  <div><h3>Dr. Laila Nasrin</h3><p>Diagnostics · MBBS, M.Phil (Radiology)</p><p class="when">Sat–Thu · 9 am–3 pm</p><a href="appointment.html?doctor=Dr.+Laila+Nasrin">Book with this doctor</a></div>
+</article></div>
+  <p class="empty" id="doc-empty" hidden>No doctor matches your search. Try another name or choose “All departments”.</p>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Shefa General Hospital</h4>
+        <p>House 12, Hospital Road, Sadar, Bangladesh<br>Appointments 09610-000111 · Emergency 09610-000999</p>
+      </div>
+      <div><h4>Hospital</h4><ul><li><a href="about.html">About us</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+      <div><h4>Patients</h4><ul><li><a href="appointment.html">Book appointment</a></li><li><a href="contact.html#hours">Visiting hours</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <p>© 2026 Shefa General Hospital. Demo website — all names and numbers are fictional.</p>
+  </div>
+</footer>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

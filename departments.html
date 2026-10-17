@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Departments | Shefa General Hospital</title>
+<meta name="description" content="Departments">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="er" role="region" aria-label="Emergency">
+  <div class="wrap">
+    <span class="bn">জরুরি বিভাগ ২৪ ঘণ্টা খোলা — Emergency open 24/7</span>
+    <a href="tel:+8809610000999">Call 09610-000999</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="3" width="8" height="26" rx="2" fill="currentColor"/><rect x="3" y="12" width="26" height="8" rx="2" fill="currentColor"/></svg><span>Shefa General Hospital</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="departments.html" aria-current="page">Departments</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <button class="search-btn" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <div class="search-field" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search doctors, departments, services…" aria-label="Search the site" autocomplete="off">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="results" aria-live="polite"></ul>
+      <p class="hint">Popular: <button type="button">Cardiology</button><button type="button">ICU</button><button type="button">Vaccination</button><button type="button">X-ray</button></p>
+    </div>
+  </div>
+</header>
+<main>
+<div class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / Departments</p>
+  <h1>Departments and services</h1>
+  <p>Choose a department to see what it treats and which consultants work there.</p>
+</div></div>
+<section style="padding-top:1rem"><div class="wrap"><div class="dept-detail" id="medicine">
+  <h2>Medicine</h2>
+  <div><p>Diabetes, hypertension, fever and general adult care.</p><ul><li>Diabetes & thyroid clinic</li><li>Hypertension follow-up</li><li>Dengue & fever management</li><li>Asthma and COPD care</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=medicine">See Medicine doctors</a></p></div>
+</div>
+<div class="dept-detail" id="cardiology">
+  <h2>Cardiology</h2>
+  <div><p>ECG, echo, stress test and a coronary care unit.</p><ul><li>ECG & echocardiography</li><li>Exercise tolerance test</li><li>8-bed CCU</li><li>Heart failure clinic</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=cardiology">See Cardiology doctors</a></p></div>
+</div>
+<div class="dept-detail" id="gynae">
+  <h2>Gynae & Obstetrics</h2>
+  <div><p>Antenatal care, normal and caesarean delivery.</p><ul><li>Antenatal check-ups</li><li>Normal & caesarean delivery</li><li>Family planning</li><li>Infertility counselling</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=gynae">See Gynae & Obstetrics doctors</a></p></div>
+</div>
+<div class="dept-detail" id="paediatrics">
+  <h2>Paediatrics</h2>
+  <div><p>Child health, vaccination and a 10-bed NICU.</p><ul><li>Newborn care & NICU</li><li>EPI vaccination</li><li>Growth monitoring</li><li>Childhood asthma</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=paediatrics">See Paediatrics doctors</a></p></div>
+</div>
+<div class="dept-detail" id="orthopaedics">
+  <h2>Orthopaedics</h2>
+  <div><p>Fractures, joint pain and physiotherapy.</p><ul><li>Fracture & trauma care</li><li>Knee and back pain clinic</li><li>Physiotherapy unit</li><li>Sports injuries</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=orthopaedics">See Orthopaedics doctors</a></p></div>
+</div>
+<div class="dept-detail" id="diagnostics">
+  <h2>Diagnostics</h2>
+  <div><p>Pathology, X-ray, ultrasound and CT scan.</p><ul><li>24-hour pathology</li><li>Digital X-ray</li><li>Ultrasound & Doppler</li><li>CT scan</li></ul>
+  <p style="margin-top:.8rem"><a href="doctors.html?dept=diagnostics">See Diagnostics doctors</a></p></div>
+</div></div></section>
+<div class="cta"><div class="wrap">
+  <h2>Need to see a doctor this week?</h2>
+  <a class="btn" href="appointment.html">Book an appointment</a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Shefa General Hospital</h4>
+        <p>House 12, Hospital Road, Sadar, Bangladesh<br>Appointments 09610-000111 · Emergency 09610-000999</p>
+      </div>
+      <div><h4>Hospital</h4><ul><li><a href="about.html">About us</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+      <div><h4>Patients</h4><ul><li><a href="appointment.html">Book appointment</a></li><li><a href="contact.html#hours">Visiting hours</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <p>© 2026 Shefa General Hospital. Demo website — all names and numbers are fictional.</p>
+  </div>
+</footer>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

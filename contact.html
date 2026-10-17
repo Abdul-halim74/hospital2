@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Shefa General Hospital</title>
+<meta name="description" content="Contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="er" role="region" aria-label="Emergency">
+  <div class="wrap">
+    <span class="bn">জরুরি বিভাগ ২৪ ঘণ্টা খোলা — Emergency open 24/7</span>
+    <a href="tel:+8809610000999">Call 09610-000999</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="3" width="8" height="26" rx="2" fill="currentColor"/><rect x="3" y="12" width="26" height="8" rx="2" fill="currentColor"/></svg><span>Shefa General Hospital</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <button class="search-btn" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <div class="search-field" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search doctors, departments, services…" aria-label="Search the site" autocomplete="off">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="results" aria-live="polite"></ul>
+      <p class="hint">Popular: <button type="button">Cardiology</button><button type="button">ICU</button><button type="button">Vaccination</button><button type="button">X-ray</button></p>
+    </div>
+  </div>
+</header>
+<main>
+<div class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+  <h1>Contact and visiting hours</h1>
+  <p>Call, email or visit us. The emergency department is open 24 hours, every day.</p>
+</div></div>
+<section><div class="wrap split">
+  <div>
+    <address>
+      House 12, Hospital Road, Sadar, Bangladesh
+      <strong>Appointments</strong> 09610-000111 (9 am – 8 pm)
+      <strong>Emergency &amp; ambulance</strong> 09610-000999 (24/7)
+      <strong>Email</strong> info@shefahospital.example
+    </address>
+    <div class="map" style="margin-top:1.5rem">Map placeholder — embed Google Maps here</div>
+  </div>
+  <form class="stack" data-demo="Message sent. We reply to emails within one working day.">
+    <h2>Send us a message</h2>
+    <label>Name <input required autocomplete="name"></label>
+    <label>Phone or email <input required></label>
+    <label>Message <textarea rows="5" required></textarea></label>
+    <button class="btn btn-primary" type="submit">Send message</button>
+    <p class="note" role="status"></p>
+  </form>
+</div></section>
+<section class="alt" id="hours"><div class="wrap">
+  <h2>Visiting hours</h2>
+  <p class="lead">One visitor per patient at a time, please. ICU visits need permission from the duty doctor.</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Ward</th><th>Morning</th><th>Evening</th></tr></thead>
+    <tbody>
+      <tr><td>General ward</td><td>11:00 – 12:30</td><td>17:00 – 19:00</td></tr>
+      <tr><td>Cabin</td><td>10:00 – 13:00</td><td>16:00 – 20:00</td></tr>
+      <tr><td>Maternity</td><td>11:00 – 12:00</td><td>17:00 – 18:00</td></tr>
+      <tr><td>ICU / CCU</td><td colspan="2">With the duty doctor’s permission</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Shefa General Hospital</h4>
+        <p>House 12, Hospital Road, Sadar, Bangladesh<br>Appointments 09610-000111 · Emergency 09610-000999</p>
+      </div>
+      <div><h4>Hospital</h4><ul><li><a href="about.html">About us</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+      <div><h4>Patients</h4><ul><li><a href="appointment.html">Book appointment</a></li><li><a href="contact.html#hours">Visiting hours</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <p>© 2026 Shefa General Hospital. Demo website — all names and numbers are fictional.</p>
+  </div>
+</footer>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

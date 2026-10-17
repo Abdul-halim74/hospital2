@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book an appointment | Shefa General Hospital</title>
+<meta name="description" content="Book an appointment">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="er" role="region" aria-label="Emergency">
+  <div class="wrap">
+    <span class="bn">জরুরি বিভাগ ২৪ ঘণ্টা খোলা — Emergency open 24/7</span>
+    <a href="tel:+8809610000999">Call 09610-000999</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="3" width="8" height="26" rx="2" fill="currentColor"/><rect x="3" y="12" width="26" height="8" rx="2" fill="currentColor"/></svg><span>Shefa General Hospital</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html" aria-current="page">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <button class="search-btn" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="wrap">
+      <div class="search-field" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search doctors, departments, services…" aria-label="Search the site" autocomplete="off">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="results" aria-live="polite"></ul>
+      <p class="hint">Popular: <button type="button">Cardiology</button><button type="button">ICU</button><button type="button">Vaccination</button><button type="button">X-ray</button></p>
+    </div>
+  </div>
+</header>
+<main>
+<div class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / Appointment</p>
+  <h1>Book an appointment</h1>
+  <p>Send a request and our front desk will call you to confirm a serial number.</p>
+</div></div>
+<section><div class="wrap split">
+  <form class="stack" data-demo="Request received. Our desk will call you within 30 minutes to confirm your serial.">
+    <div class="two">
+      <label>Patient name <input required autocomplete="name"></label>
+      <label>Phone <input required type="tel" autocomplete="tel"></label>
+    </div>
+    <div class="two">
+      <label>Age <input required type="number" min="0" max="120"></label>
+      <label>Gender <select><option>Female</option><option>Male</option><option>Other</option></select></label>
+    </div>
+    <label>Doctor <select id="appt-doctor"><option value="">Any available doctor</option><option value="Dr. Rashida Haque">Dr. Rashida Haque (Medicine)</option><option value="Dr. Mizanur Ahmed">Dr. Mizanur Ahmed (Medicine)</option><option value="Dr. Arif Kabir">Dr. Arif Kabir (Cardiology)</option><option value="Dr. Shirin Farzana">Dr. Shirin Farzana (Cardiology)</option><option value="Dr. Nusrat Sultana">Dr. Nusrat Sultana (Gynae & Obstetrics)</option><option value="Dr. Tanvir Mahmud">Dr. Tanvir Mahmud (Paediatrics)</option><option value="Dr. Jahidul Islam">Dr. Jahidul Islam (Orthopaedics)</option><option value="Dr. Laila Nasrin">Dr. Laila Nasrin (Diagnostics)</option></select></label>
+    <label>Preferred date <input required type="date"></label>
+    <label>Problem in brief (optional) <textarea rows="3"></textarea></label>
+    <button class="btn btn-primary" type="submit">Request appointment</button>
+    <p class="note" role="status"></p>
+  </form>
+  <div class="aside">
+    <h3>Before your visit</h3>
+    <ul>
+      <li>Arrive 20 minutes before your serial time.</li>
+      <li>Bring old prescriptions and test reports.</li>
+      <li>Consultation fees are paid at the front desk.</li>
+      <li>For chest pain, breathing trouble or heavy bleeding, come straight to Emergency.</li>
+    </ul>
+  </div>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Shefa General Hospital</h4>
+        <p>House 12, Hospital Road, Sadar, Bangladesh<br>Appointments 09610-000111 · Emergency 09610-000999</p>
+      </div>
+      <div><h4>Hospital</h4><ul><li><a href="about.html">About us</a></li><li><a href="departments.html">Departments</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+      <div><h4>Patients</h4><ul><li><a href="appointment.html">Book appointment</a></li><li><a href="contact.html#hours">Visiting hours</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <p>© 2026 Shefa General Hospital. Demo website — all names and numbers are fictional.</p>
+  </div>
+</footer>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
